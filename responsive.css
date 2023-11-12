@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media only screen and (max-width: 600px) {
     *{
         
@@ -8,13 +15,19 @@
     }
     body{
         overflow-x: hidden;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
     }
 
     .main {
      position: absolute;
      
-     height: 3200px;
+     height: 2900px;
 
+    }
+    .header{
+          margin-top: -14px;
     }
     .me{
         font-size: 10px;
@@ -35,10 +48,11 @@
         width: 80%;
         position: absolute;
         top: 50px;
-       right:10px;
         
     }
     .describ{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
         
@@ -70,7 +84,7 @@
  }
  .desc{
     font-size: 8px;
-    top: 110px;
+    top: 100px;
     height: 165px;
     width: 165px;
     padding-left: 0px;
@@ -92,8 +106,14 @@
  }
  .fs{
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 90vw;
     position: absolute;
     top:-550px;
@@ -113,9 +133,14 @@
  .fa-brands {
     font-size: 27px;
     padding-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-left: 10px;
     color: #fff8fe;
 
@@ -127,20 +152,23 @@ margin-left:10px ;
     
     width: 87%;
     position: absolute;
-    top: -700px;
+    top: -800px;
     
 }
 .wh{
-    font-size: 30px;
+    font-size: 23px;
 
     position: absolute;
-    left: 70px;
+    left: 130px;
     width: 200px;
-    top: 40px;
+    top: 0px;
 
 }
 .cards{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     
     position: absolute;
     top: -60px;
@@ -148,7 +176,7 @@ margin-left:10px ;
 }
 .card{
     width: 85%;
-    margin-left: 30px;
+    margin-left: 35px;
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 0px;
@@ -158,22 +186,27 @@ margin-left:10px ;
 }
 .pra{
     font-size: 13px;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     margin-left: 40px;
 }
 .contactme{
     position: absolute;
-    top: -750px;
-    flex-direction: column;
+    top: -900px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 88%;
-    left: 40px;
+    left: 45px;
+    
 }
 .conheder{
-    font-size: 30px;
+    font-size: 26px;
     width:auto;
     position: absolute;
     left: 100px;
-    
+    top:-60px;
 } 
 .condet{
     width: 90%;
@@ -206,19 +239,22 @@ margin-left:10px ;
     top: 500px;
     left: -15px;
     height: 700px;
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     padding-top: 30px;
 
 }
 .fr{
   margin-top: 20px;
     width: 70%;
-   height:40px;
-  font-size: 14px;
+    height: 7px;
+    border-radius: 13px;
+    font-size: 10px;
 }
 .massage{
     width: 70%;
-    
+    max-height: 40px;
     padding-top: 20px;
     font-size: 14px;
 }
@@ -234,7 +270,11 @@ margin-left:10px ;
     width: 100%;
     position: absolute;
     left: 70px;
-    top: -300px;
+    top: -600px;
+    height: 40px;
+}
+.cp{
+    font-size: 15px;
 }
 .fa-envelope{
     font-size: 22px;
@@ -243,7 +283,7 @@ margin-left:10px ;
     margin-left: -5px;
     
 }
-.emi{
+.emi{ 
     margin-left: 14px;
 }
 .hand{
@@ -252,10 +292,19 @@ margin-left:10px ;
 .fa-solid{
     font-size: 27px;
     padding-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-left: 10px;
     color: #fff8fe;
+}
+.fs{
+   
+    margin-top: 850px;
 }
 }
